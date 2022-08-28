@@ -20,8 +20,8 @@ class LinearProj(torch.nn.Module):
 linear_proj = LinearProj()
 print(linear_proj.state_dict().keys())
 
-linear_proj.linear.weight = model['model']['w2v_encoder.proj.weight']
-linear_proj.linear.bias = model['model']['w2v_encoder.proj.bias']
+linear_proj.linear.weight = torch.nn.Parameter(model['model']['w2v_encoder.proj.weight'])
+linear_proj.linear.bias = torch.nn.Parameter(model['model']['w2v_encoder.proj.bias'])
 
 torch.save(linear_proj, linear_projection_path)
 print(f'save mdoel to {linear_projection_path}')
