@@ -5,7 +5,7 @@ delete transformer layers of a pretrained model, only maintain the layer 0 and 1
 import torch
 
 old_model_path = '/mnt/lustre/sjtu/home/xc915/superb/upstream_model/audio_base_ls.pt'
-new_model_path = f'/mnt/lustre/sjtu/home/xc915/superb/upstream_model/data2vec_0_1.pt'
+new_model_path = '/mnt/lustre/sjtu/home/xc915/superb/upstream_model/data2vec_0_1.pt'
 
 old_model = torch.load(old_model_path) 
 key_list = list(old_model["model"].keys())
