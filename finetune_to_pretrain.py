@@ -4,9 +4,9 @@ load weight from a finetuned model to a pretrained model
 
 import torch
 
-finetune_model_path = '/mnt/lustre/sjtu/home/xc915/superb/upstream_model/hubert-finetune/hubert-base-finetune-100h.pt'
-pretrain_model_path = '/mnt/lustre/sjtu/home/xc915/superb/upstream_model/hubert_base.ls960.pt'
-new_model_path = '/mnt/lustre/sjtu/home/xc915/superb/upstream_model/finetune_to_pretrain/hubert_finetune_to_pretrain.pt'
+finetune_model_path = '/mnt/lustre/sjtu/home/xc915/superb/upstream_model/data2vec-finetune/audio_base_ls_100h.pt'
+pretrain_model_path = '/mnt/lustre/sjtu/home/xc915/superb/upstream_model/audio_base_ls.pt'
+new_model_path = '/mnt/lustre/sjtu/home/xc915/superb/upstream_model/finetune_to_pretrain/data2vec_finetune_to_pretrain.pt'
 
 # load all keys from w2v_encoder.w2v_model in finetuned model to pretrain model
 
