@@ -25,4 +25,4 @@ linear_proj.linear.weight = torch.nn.Parameter(model['model']['w2v_encoder.proj.
 linear_proj.linear.bias = torch.nn.Parameter(model['model']['w2v_encoder.proj.bias'])
 
 torch.save(linear_proj.state_dict(), linear_projection_path)
-print(f'save mdoel to {linear_projection_path}')
+print(f'save model to {linear_projection_path}')
